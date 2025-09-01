@@ -1,0 +1,19 @@
+{
+  "type": "record",
+  "name": "TweetRecord",
+  "namespace": "com.qode.marketintel.model",
+  "fields": [
+    {"name": "id", "type": "string"},
+    {"name": "username", "type": "string"},
+    {"name": "timestamp", "type": "long", "doc": "epoch millis"},
+    {"name": "text", "type": "string"},
+    {"name": "likeCount", "type": "int"},
+    {"name": "retweetCount", "type": "int"},
+    {"name": "replyCount", "type": "int"},
+    {"name": "quoteCount", "type": "int"},
+    {"name": "mentions", "type": {"type":"array","items":"string"}},
+    {"name": "hashtags", "type": {"type":"array","items":"string"}},
+    {"name": "lang", "type": "string"},
+    {"name": "collectedAt", "type": "long"}
+  ]
+}
